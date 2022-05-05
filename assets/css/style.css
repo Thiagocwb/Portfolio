@@ -4,57 +4,202 @@
     box-sizing: border-box;
 }
 body{
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-    color: rgb(252, 250, 250);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background: rgb(30,9,108);
+background: linear-gradient(90deg, rgba(30,9,108,0.9262079831932774) 0%, rgba(36,172,231,1) 50%, rgba(33,9,108,0.9486169467787114) 100%, rgba(42,38,110,1) 100%);
 }
-header{
+.header ul li{
+    list-style: none;
+    margin-right: 2rem;
+    padding: 4rem 0;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.header .redes{
     display: flex;
     position: relative;
     align-items: center;
     justify-content: space-between;
-    margin-left: 8rem;
-    margin-right: 8rem;
-    font-size: 15px;
-    font-weight: bolder;
+    flex-direction: row;
 }
-header .name{
-    margin-top: 2rem;
-}
-header .social{
-    margin-top: 2rem; 
-}
-.social ul{
+.redes .contato ul{
     display: flex;
-    list-style: none;
-    align-items: center;
+    justify-content: space-between;
+    margin-left: 5rem;
+    font-weight: bold;
 }
-.social ul li{
-    padding-right: .9rem;
-}
-.social a{
-    color: white;
-    text-decoration: none;
-}
-.logo img{
+.redes .social ul{
     display: flex;
-    margin-top: -3.7rem;
+    justify-content: space-between;
+    margin-right: 5rem;
+    font-weight: bold;
+}
+.fundo .imagem img{
     width: 100%;
-    height: 100%;
+    margin-top: -11rem;
 }
-.name a{
-    color: white;
-    text-decoration: none;
-}
-.nome{
+.fundo .nome{
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 7rem;
-    margin-top: -5rem;
+    margin-top: -6rem;
+    margin-bottom: 4rem;
+    font-size: 33px;
 }
-main .descricao {
+.fundo .dev{
     display: flex;
     justify-content: center;
-} 
+    align-items: center;
+    font-size: 25px;
+    margin-bottom: 4rem;
+}
+.fundo .botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+button{
+    font-size: 1.5rem;
+    border-radius: 9px;
+    padding: 0.5rem;
+    color: rgb(238, 241, 250);
+    background: rgb(30,9,108);
+background: linear-gradient(90deg, rgba(30,9,108,0.9262079831932774) 0%, rgba(36,107,231,1) 50%, rgba(33,9,108,0.9486169467787114) 100%, rgba(42,38,110,1) 100%);
+    cursor: pointer;
+}
+.fundo .descricao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media (max-width:620px){
+    .redes .contato ul{
+        font-size: 0;
+        margin-top: -3rem;
+    }
+    .redes .social ul{
+        font-size: 0;
+        margin-top: -3rem;
+    }
+    .fundo .imagem img{
+        width: 100%;
+        margin-top: -6rem;
+    }
+    .fundo .nome{
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        font-size: 15px;
+    }
+    .fundo .dev{
+        font-size: 15px;
+    }
+    button{
+        font-size: 1rem;
+        border-radius: 9px;
+        padding: 0.3rem;
+        color: rgb(238, 241, 250);
+        background: rgb(15,207,217);
+        background: linear-gradient(90deg, rgba(15,207,217,1) 0%, rgba(14,184,141,1) 46%, rgba(12,159,55,1) 100%, rgba(42,38,110,1) 100%);
+        cursor: pointer;
+    }
+    .fundo .descricao{
+        margin-top: 4rem;
+        font-size: 11px;
+        text-align: center;
+    }
+}
+@media (min-width:621px) and (max-width:730px){ 
+    .redes .contato ul{
+        font-size: 0;
+        margin-top: -1rem;
+    }
+    .redes .social ul{
+        font-size: 0;
+        margin-top: -1rem;
+    }
+    .fundo .imagem img{
+        width: 100%;
+        margin-top: -9rem;
+    }
+    .fundo .nome{
+        margin-top: 3rem;
+        margin-bottom: 7rem;
+        font-size: 20px;
+    }
+    .fundo .dev{
+        font-size: 20px;
+    }
+    button{
+        font-size: 1.5rem;
+        border-radius: 9px;
+        padding: 0.3rem;
+        color: rgb(238, 241, 250);
+        background: rgb(15,207,217);
+        background: linear-gradient(90deg, rgba(15,207,217,1) 0%, rgba(14,184,141,1) 46%, rgba(12,159,55,1) 100%, rgba(42,38,110,1) 100%);
+        cursor: pointer;
+    }
+    .fundo .descricao{
+        margin-top: 4rem;
+        font-size: 12px;
+        text-align: center;
+    }
+}
+@media (min-width:731px) and (max-width:890px){ 
+    .fundo .nome{
+        margin-top: 1rem;
+        margin-bottom: 7rem;
+        font-size: 24px;
+    }
+    .fundo .dev{
+        font-size: 23px;
+    }
+    button{
+        font-size: 1.5rem;
+        border-radius: 9px;
+        padding: 0.3rem;
+        color: rgb(238, 241, 250);
+        background: rgb(15,207,217);
+        background: linear-gradient(90deg, rgba(15,207,217,1) 0%, rgba(14,184,141,1) 46%, rgba(12,159,55,1) 100%, rgba(42,38,110,1) 100%);
+        cursor: pointer;
+    }
+    .fundo .descricao{
+        margin-top: 4rem;
+        font-size: 12px;
+        text-align: center;
+    }
+}
+@media (min-width:891px) and (max-width:1300px){ 
+    .fundo .nome{
+        margin-top: -4rem;
+        margin-bottom: 7rem;
+        font-size: 27px;
+    }
+    .fundo .dev{
+        font-size: 26px;
+    }
+    button{
+        font-size: 1.5rem;
+        border-radius: 9px;
+        padding: 0.3rem;
+        color: rgb(238, 241, 250);
+        background: rgb(15,207,217);
+        background: linear-gradient(90deg, rgba(15,207,217,1) 0%, rgba(14,184,141,1) 46%, rgba(12,159,55,1) 100%, rgba(42,38,110,1) 100%);
+        cursor: pointer;
+    }
+    .fundo .descricao{
+        margin-top: 4rem;
+        font-size: 15px;
+        text-align: center;
+    }
+}
